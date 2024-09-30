@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: #2a2a2a url(images/dodo.gif) no-repeat -100px center;
+	background-size: 600px;
+	color: #F5F5F6;
+	font-size: 18px;
+	line-height: 1.6em;
+	font-family: 'Playfair Display', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all .4s cubic-bezier(.55,0,.1,1);
+}
+
+a:hover {
+	color: #de3739;
+}
+
+h2, h3, h4, h5, p:not(:last-of-type), ul {
+	margin-bottom: 3.2rem;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0 3em;
+}
+
+#logo {
+	fill: #de3739;
+	display: block;
+	width: 250px;
+	min-width: 250px;
+	margin-right: 7em;
+	margin-top: -5em;
+}
+
+.logotipo {
+	fill: #de3739;
+}
+
+.bajada {
+	fill: #F5F5F6;
+}
+
+.projects li span {
+	font-size: .75em;
+	font-style: italic;
+}
+
+.projects li {
+	list-style-image: url(images/bullet.svg);
+	margin-left: .9em;
+}
+
+.projects li a {
+	padding-left: .3em;
+}
+
+@media screen and (max-height: 820px) and (min-width: 960px) {
+
+	#logo {
+		margin-top: -3.65em;
+		margin-right: 4em;
+	}
+
+	#container {
+		align-items: flex-start;
+		padding: 7em 3em;
+	}
+
+	#content {
+		max-width: 35em;
+	}
+
+}
+
+@media screen and (max-width: 960px) {
+
+	body {
+		font-size: 1em;
+		text-align: center;
+		background-position: -300px 100px;
+	}
+
+	#logo {
+		margin: 0 0 9em;
+		display: inline-block;
+		width: 200px;
+		min-width: 200px;
+	}
+
+	#container {
+		display: block;
+		align-items: flex-start;
+		padding: 4em 1em;
+		min-height: none;;
+	}
+
+	#content {
+		max-width: none;
+	}
+	
+	.projects li {
+		list-style-image: none;
+		margin: 0;
+	}
+
+	.projects li:after {
+		display: none;
+	}
+
+}
